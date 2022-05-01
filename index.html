@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Resume</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <link rel="stylesheet" href="resumeStyle.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <script>
+    function hamburgerMenu() {
+      var x = document.getElementById("idMenuBar");
+      if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+      } else {
+        x.className = x.className.replace(" w3-show", "");
+      }
+    }
+  </script>
+
+  <style>
+    .multicolumn {
+      column-count: 2;
+      text-align: justify;
+      text-justify: inter-word;
+    }
+
+    .tab {
+      display: inline-block;
+      margin-left: 40px;
+    }
+
+    .justifyParagraph {
+      padding: 5px;
+      text-align: justify;
+      text-justify: inter-word;
+    }
+  </style>
+
+  <body>
+    <!-- Top navigation bar -->
+    <div class="w3-bar w3-sand">
+      <a href="#projects" class="w3-bar-item w3-button w3-right w3-hide-small"
+        >Projects
+      </a>
+      <a href="#training" class="w3-bar-item w3-button w3-right w3-hide-small"
+        >Training<br />
+        Attended
+      </a>
+
+      <a href="#education" class="w3-bar-item w3-button w3-right w3-hide-small"
+        >Education
+      </a>
+      <a href="#about" class="w3-bar-item w3-button w3-right w3-hide-small"
+        >About <br />
+        Me
+      </a>
+      <a
+        href="javascript:void(0)"
+        class="w3-bar-item w3-button w3-hide-large w3-hide-medium w3-right"
+        onclick="hamburgerMenu()"
+        >&#9776;</a
+      >
+    </div>
+
+    <!-- Hamburger menu -->
+    <div
+      id="idMenuBar"
+      class="w3-bar-block w3-sand w3-hide w3-hide-large w3-hide-medium"
+    >
+      <a href="#projects" class="w3-bar-item w3-button w3-center">Projects </a>
+      <a href="#training" class="w3-bar-item w3-button w3-center"
+        >Training Attended
+      </a>
+      <a href="#education" class="w3-bar-item w3-button w3-center"
+        >Education
+      </a>
+      <a href="#about" class="w3-bar-item w3-button w3-center">About Me </a>
+    </div>
+
+    <!-- Content -->
+    <div class="w3-content" style="max-width: 900px">
+      <!-- Header -->
+      <div class="w3-header w3-container">
+        <div class="w3-col m6 w3-padding-large w3-center">
+          <img
+            src="assets/ProfilePicture.jpg"
+            class="w3-round w3-image"
+            alt="ProfilePicture"
+            width="330"
+          />
+        </div>
+        <!-- col -->
+
+        <div class="w3-col m6 w3-padding-small">
+          <h1>
+            I am <br />
+            Ng Chee Siang
+          </h1>
+          <br />
+          <p class="justifyParagraph">
+            A passionate fresh graduate IT student who strives for more
+            opportunities in expanding his experience and knowledge in creating
+            software that can contribute to the society.
+          </p>
+          <a href="https://github.com/ngcheesiang277275" target="_blank"
+            ><i class="fa fa-github w3-large"></i
+          ></a>
+          <a href="https://www.instagram.com/ncsss__/?hl=en" target="_blank"
+            ><i class="fa fa-instagram w3-large"></i
+          ></a>
+          <a
+            href="https://www.linkedin.com/in/ng-chee-siang-527a98235"
+            target="_blank"
+            ><i class="fa fa-linkedin w3-large"></i
+          ></a>
+        </div>
+        <!-- col -->
+      </div>
+      <!-- header -->
+
+      <hr />
+
+      <!-- About Me -->
+      <div id="about" class="w3-container w3-sand">
+        <h2 class="w3-center">About Me</h2>
+
+        <div class="w3-container">
+          <div class="w3-col m6 w3-padding-large w3-center">
+            <h6>Personal info</h6>
+            <p>
+              <i class="fa fa-birthday-cake w3-margin-right w3-text-red"></i>4
+              March 2000
+            </p>
+            <p>
+              <i class="fa fa-map w3-margin-right w3-text-red"></i>Taiping,
+              Perak
+            </p>
+            <p>
+              <i class="fa fa-envelope w3-margin-right w3-text-red"></i
+              >ng_chee_siang@soc.uum.edu.my
+            </p>
+            <p>
+              <i class="fa fa-phone w3-margin-right w3-text-red"></i
+              >+60-16-798-8172
+            </p>
+
+            <hr />
+            <h6>Languages</h6>
+            <div class="w3-content" style="max-width: 300px">
+              <p style="text-align: center">Malay</p>
+
+              <div class="w3-pale-red w3-round-large">
+                <div
+                  class="w3-container w3-center w3-round-large w3-pink"
+                  style="width: 70%"
+                >
+                  <div class="w3-center w3-text-white">70%</div>
+                </div>
+              </div>
+            </div>
+            <!-- one skill -->
+            <div class="w3-content" style="max-width: 300px">
+              <p style="text-align: center">English</p>
+
+              <div class="w3-pale-red w3-round-large">
+                <div
+                  class="w3-container w3-center w3-round-large w3-pink"
+                  style="width: 75%"
+                >
+                  <div class="w3-center w3-text-white">75%</div>
+                </div>
+              </div>
+            </div>
+            <!-- one skill -->
+            <div class="w3-content" style="max-width: 300px">
+              <p style="text-align: center">Mandarin</p>
+
+              <div class="w3-pale-red w3-round-large">
+                <div
+                  class="w3-container w3-center w3-round-large w3-pink"
+                  style="width: 90%"
+                >
+                  <div class="w3-center w3-text-white">90%</div>
+                </div>
+              </div>
+            </div>
+            <!-- one skill -->
+          </div>
+          <!-- col -->
+
+          <div class="w3-col m6 w3-padding-large w3-center">
+            <h6>Skills</h6>
+
+            <div class="w3-content" style="max-width: 300px">
+              <p style="text-align: center">Java</p>
+
+              <div class="w3-pale-red w3-round-large">
+                <div
+                  class="w3-container w3-center w3-round-large w3-red"
+                  style="width: 80%"
+                >
+                  <div class="w3-center w3-text-white">80%</div>
+                </div>
+              </div>
+            </div>
+            <!-- one skill -->
+
+            <div class="w3-content" style="max-width: 300px">
+              <p style="text-align: center">MySQL</p>
+
+              <div class="w3-pale-red w3-round-large">
+                <div
+                  class="w3-container w3-center w3-round-large w3-red"
+                  style="width: 70%"
+                >
+                  <div class="w3-center w3-text-white">70%</div>
+                </div>
+              </div>
+            </div>
+            <!-- one skill -->
+
+            <div class="w3-content" style="max-width: 300px">
+              <p style="text-align: center">Flutter</p>
+
+              <div class="w3-pale-red w3-round-large">
+                <div
+                  class="w3-container w3-center w3-round-large w3-red"
+                  style="width: 60%"
+                >
+                  <div class="w3-center w3-text-white">60%</div>
+                </div>
+              </div>
+            </div>
+            <!-- one skill -->
+
+            <div class="w3-content" style="max-width: 300px">
+              <p style="text-align: center">HTML</p>
+
+              <div class="w3-pale-red w3-round-large">
+                <div
+                  class="w3-container w3-center w3-round-large w3-red"
+                  style="width: 60%"
+                >
+                  <div class="w3-center w3-text-white">60%</div>
+                </div>
+              </div>
+            </div>
+            <!-- one skill -->
+
+            <div class="w3-content" style="max-width: 300px">
+              <p style="text-align: center">Figma</p>
+
+              <div class="w3-pale-red w3-round-large">
+                <div
+                  class="w3-container w3-center w3-round-large w3-red"
+                  style="width: 80%"
+                >
+                  <div class="w3-center w3-text-white">80%</div>
+                </div>
+              </div>
+            </div>
+            <!-- one skill -->
+
+            <div class="w3-content" style="max-width: 300px">
+              <p style="text-align: center">Adobe Illustrator</p>
+
+              <div class="w3-pale-red w3-round-large">
+                <div
+                  class="w3-container w3-center w3-round-large w3-red"
+                  style="width: 80%"
+                >
+                  <div class="w3-center w3-text-white">80%</div>
+                </div>
+              </div>
+            </div>
+            <!-- one skill -->
+          </div>
+          <!-- col -->
+        </div>
+      </div>
+      <!-- About Me-->
+
+      <br />
+      <hr />
+
+      <div class="w3-container">
+        <div class="w3-col m6 w3-padding-large w3-center">
+          <!-- Education -->
+          <div id="education" class="w3-container w3-white w3-center">
+            <h2 class="w3-center">Education</h2>
+
+            <h6>Universiti Utara Malaysia</h6>
+            <ul>
+              <li>
+                Bachelor of Science with Honours<br />(Information Technology)
+              </li>
+              <li>Intake 2020/2021</li>
+              <li>Majoring in software engineering</li>
+              <li>CGPA 3.96</li>
+            </ul>
+            <br />
+            <h6>SMJK Hua Lian</h6>
+            <ul>
+              <li>STPM, SPM, PT3</li>
+              <li>Graduated in 2019</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Training Attended -->
+        <div class="w3-col m6 w3-padding-small">
+          <div id="training" class="w3-container w3-white w3-center">
+            <h2 class="w3-center">Training Attended</h2>
+
+            <h6>Varsity Hackhathon 2022</h6>
+            <ul>
+              <li>Organised by USM Malaysia</li>
+              <li>Business & Design Hackhathon</li>
+              <li>Participation</li>
+            </ul>
+            <br />
+            <h6>Coding - Generation Programme 2021</h6>
+            <ul>
+              <li>Organised by UTM Malaysia</li>
+              <li>
+                Record holder for Malaysia Book Of Record <br />as the "Most
+                Number of Participants<br />in a Virtual Coding Learning
+                Programme"
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <hr />
+
+      <!-- Projects -->
+      <div id="projects" class="w3-container w3-white w3-center">
+        <h2 class="w3-center">Projects</h2>
+        <div class="w3-container">
+          <img
+            src="Assets/Vhack.jpg"
+            alt="Vhack_Project"
+            style="width: 300px"
+          />
+          <div class="multicolumn w3-padding">
+            To solve the increasing cases on <b>youth suicide</b> in Malaysia,
+            we have designed a mobile application with the name "foam".
+            <br /><span class="tab"></span>This mobile application allows the
+            users to <b>discuss with people</b> facing same difficulties and
+            finding friends with similar interests. Moreover, it also allows
+            user to <b>seek help and advices from the professional</b> in the
+            fastest and most convenient way.
+          </div>
+          <a
+            href="https://www.figma.com/proto/CyCUIESIBnNdrtVlT9iger/VHACK2022-%5BV011%5D-%5Bfoam%5D-Youth-Suicide?node-id=1%3A5&starting-point-node-id=1%3A5"
+            target="_blank"
+            class="w3-button w3-round-xxlarge w3-red"
+            >Have a look
+          </a>
+        </div>
+        <br />
+        <br />
+        <div class="w3-container">
+          <img
+            src="Assets/RSK.jpg"
+            alt="Rumah Seri Kenangan"
+            style="width: 300px"
+          />
+          <div class="multicolumn w3-padding">
+            Rumah Seri Kenangan Cheras was founded to
+            <b>safeguard the elderly</b> in order to ensure their well-being and
+            life quality. <br /><span class="tab"></span> We have came up with
+            an idea to help Rumah Seri Kenangan Cheras to
+            <b>create a management system</b> to enhance their current
+            operation.
+          </div>
+          <a
+            href="https://www.figma.com/proto/wXLu8dhXf6rHqnRgRaDbzh/TEAM-A?node-id=380%3A909&starting-point-node-id=380%3A909"
+            target="_blank"
+            class="w3-button w3-round-xxlarge w3-red"
+            >Have a look
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- Content-->
+    <br />
+    <br />
+    <!-- footer -->
+    <footer class="w3-row-padding w3-padding-60 w3-center w3-sand">
+      <div>
+        <h2>Contact Me</h2>
+        <a href="https://github.com/ngcheesiang277275" target="_blank"
+          ><i class="fa fa-github w3-large"></i
+        ></a>
+        <a href="https://www.instagram.com/ncsss__/?hl=en" target="_blank"
+          ><i class="fa fa-instagram w3-large"></i
+        ></a>
+        <a
+          href="https://www.linkedin.com/in/ng-chee-siang-527a98235"
+          target="_blank"
+          ><i class="fa fa-linkedin w3-large"></i
+        ></a>
+      </div>
+
+      <hr />
+      <div class="w3-small">
+        <a href="#about" class="w3-bar-item w3-button"
+          >About <br />
+          Me
+        </a>
+        <a href="#education" class="w3-bar-item w3-button">Education </a>
+        <a href="#training" class="w3-bar-item w3-button"
+          >Training<br />
+          Attended
+        </a>
+        <a href="#projects" class="w3-bar-item w3-button">Projects </a>
+      </div>
+    </footer>
+  </body>
+</html>

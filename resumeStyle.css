@@ -1,0 +1,15 @@
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Archivo Black', sans-serif;;
+}
+
+
+ul {
+    display: table;
+    margin: 0 auto;
+    text-align: left;
+  }
+
+hr{
+    background-color: black;
+    height: 1px;
+  }
